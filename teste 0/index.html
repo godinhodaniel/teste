@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">  
+  <!-- fonts -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"><!-- bootstrap -->
+  <link rel="stylesheet" href="style.css"><!-- css -->
+  <title>Daniel Godinho</title>
+</head>
+
+<body>
+  
+  <header>
+    <div class="interface">
+      <div class="logo">
+        <a href="dan">
+          <div class="typewriter">
+            <p id="text"></p>
+        </div>
+        </a>
+      </div><!-- logo -->
+
+      <nav class="menu-desktop">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="https://astonishing-pineapple-0f2.notion.site/Daniel-Godinho-71b51626133d464a989c65b36fde42b6" target="_blank">Currículo</a></li>
+          <li><a href="#sobre">Apresentação</a></li>
+          <li><a href="">Projetos</a></li>
+        </ul>
+      </nav>
+
+      <div class="btn-contato">
+        <button>Contato</button>
+      </div> <!--botão contato-->
+
+      <div class="theme-toggle">
+        <button id="toggle-theme" class="toggle-theme">☀️</button> <!-- Ícone inicial -->
+    </div><!-- tema -->
+
+    </div><!-- div interface -->
+  </header>
+
+  <main>
+    <section class="topo-do-site">
+      <div class="interface">
+        <div class="flex">
+          <div id="inicio" class="txt-topo-site">
+              <h1>Welcome to <span> My Website!</span></h1>
+              <p>Busco oportunidade de estágio como dev para iniciar minha jornada profissional com dedicação. Almejo integrar equipes dinâmicas, absorver experiências práticas e aprimorar minhas habilidades, ao mesmo tempo em que adiciono valor aos projetos da empresa.</p>
+
+              <div class="btn-contato">
+                <a href="#">
+                   <button>Entre em Contato</button>
+              </a>
+              </div>
+          </div><!-- txt-topo -->
+
+          <div class="img-topo">
+            <img src="images\daniel.jpg" alt="EU!">
+          </div><!-- img-topo -->
+         </div><!-- flex -->
+      </div><!-- interface -->
+    </section><!-- topo-do-site -->
+
+    <section class="especialidades">
+      <div class="interface">
+        <h2 class="titulo">MY <span>PROJECTS</span>.</h2>
+        <div class="flex">
+          <div class="especialidades-box">
+            <i class="bi bi-filetype-cs"></i>
+            <h3>C#</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa.</p>
+          </div><!-- especialidades box -->
+          <div class="especialidades-box">
+            <i class="bi bi-filetype-js"></i>
+            <h3>JavaScript</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa.</p>
+          </div><!-- especialidades box -->
+          <div class="especialidades-box">
+            <i class="bi bi-code-slash"></i>
+            <h3>Extras</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa.</p>
+          </div><!-- especialidades box -->
+        </div><!-- flex -->
+      </div><!-- interface -->
+    </section><!-- especialidades -->
+
+    <section id="sobre" class="sobre">
+      <div class="interface">
+        <div class="flex">
+          <div class="img-sobre">
+            <img src="images/daniel1.jpg" alt="">
+        </div><!-- img -->
+
+        <div class="txt-sobre">
+          <h2>MUITO PRAZER, <br><span>SOU DANIEL GODINHO.</span></h2>
+          <p>
+              <button class="expand-btn" id="toggleButton" onclick="toggleSection('sobre-content')">↓</button>
+          </p>
+          <div id="sobre-content" class="expandable-content">
+              <p>
+                  Daniel, nascido em Nova Lima e criado em Belo Horizonte, cursando Análise e Desenvolvimento de Sistemas na PUC Minas, atualmente no terceiro período, com previsão de conclusão para dezembro de 2025. Tenho grande interesse em iniciar minha carreira na área de tecnologia.
+              </p>
+              <p>
+                  Desde cedo, tive contato com tecnologia de diferentes formas, o que despertou meu interesse e me levou a aprender inglês, por hobby. Tenho plena confiança no meu inglês. Estou atualmente estudando linguagens de programação como C#, JavaScript e banco de dados SQL, além de possuir um conhecimento sólido em montagem e manutenção de hardware.
+              </p>
+          <div class="btn-social">
+            <a href="https://github.com/godinhodaniel" target="_blank"><button><i class="bi bi-github"></i></button></a>
+            <a href="https://www.linkedin.com/in/danielgodinho1/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+          </div><!-- btn-social -->
+        </div><!-- txt -->
+      </div><!-- flex -->
+      </div><!-- interface -->
+    </section><!-- sobre -->
+
+    <section class="portfolio">
+      <div class="interface">
+        <h2 class="titulo">MINHAS <span>ESPECIALIDADES<SPAN/></h2>
+        <div class="flex">
+          <div class="img-port" style>
+            <div class="overlay">Projeto 1</div>
+          </div>
+          <div class="img-port" style>
+            <div class="overlay">Projeto 2</div>
+          </div>
+          <div class="img-port" style>
+            <div class="overlay">Projeto 3</div>
+          </div>
+
+        </div><!-- flex -->
+      </div><!-- interface -->
+    </section><!-- portfolio -->
+  </main>
+</body>
+<script src="script.js">
+</script>
+</html>

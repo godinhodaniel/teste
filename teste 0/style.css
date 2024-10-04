@@ -1,0 +1,399 @@
+/* GERAL */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+body {
+    font-family: "JetBrains Mono", monospace;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    .roboto-medium-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: italic;
+      }
+}
+
+
+/* Estilos padrão (Light Mode) */
+body {
+    background-color: #ffffff;
+    color: black;
+}
+
+.topo-do-site {
+    background-color: #ffffff; /* Cor de fundo padrão para light mode */
+    padding: 20px;
+    text-align: center;
+    /* Preserve a formatação existente aqui */
+}
+
+.especialidades {
+    background-color: #ffffff; /* Cor de fundo padrão para light mode */
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    /* Preserve a formatação existente aqui */
+}
+
+/* Estilos do Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: white; /* Texto geral */
+}
+
+body.dark-mode .topo-do-site {
+    background-color: #121212; /* Cor de fundo para a seção superior em dark mode */
+    /* Não altere a cor do texto aqui, apenas a cor de fundo */
+}
+
+body.dark-mode .especialidades {
+    background-color: #121212; /* Cor de fundo para a seção especialidades em dark mode */
+    /* Não altere a cor do texto aqui, apenas a cor de fundo */
+}
+
+/* Cor do texto em modo escuro */
+body.dark-mode .topo-do-site h1,
+body.dark-mode .topo-do-site p,
+body.dark-mode .especialidades h1,
+body.dark-mode .especialidades h2,
+body.dark-mode .especialidades h3,
+body.dark-mode .especialidades p,
+body.dark-mode .portfolio h2,
+body.dark-mode .portfolio h3,
+body.dark-mode .portfolio p,
+body.dark-mode .portfolio .titulo {
+    color: white; /* Cor dos títulos e parágrafos em ambas as seções no modo escuro */
+}
+
+/* Estilo dos Botões e Links */
+body.dark-mode button {
+    color: black; /* Cor do texto do botão */
+}
+
+body.dark-mode a {
+    color: #3178c6; /* Cor dos links */
+}
+
+/* body */
+body{
+     background-color: white;
+     height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #3178c6;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+h2.titulo{
+    color: black;
+    font-size: 38px;
+    text-align: center;
+}
+h2.titulo span{
+    color: #3178c6;
+    font-size: 38px;
+    text-align: center;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+/* HEADER */
+header{
+    padding: 40px 4%;
+    background-color: #343a40;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color:white;
+    text-decoration: none;
+    display: inline-block;
+    transition: .1s;
+
+}
+
+header a:hover{
+    color:black;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #3178c6;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+header .btn-contato button:hover{
+    box-shadow: 0px 0px 8px rgba(137, 43, 226, 0.356);
+}
+
+/* TOPO DO SITE */
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: black;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: #3178c6;
+    font-size: 60px;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: black;
+    margin: 40px 0px;
+}
+
+.topo-do-site .img-topo img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+
+}
+/* @keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+} */
+
+
+/* Estilização da Imagem */
+.img-topo img {
+    width: 300px; /* Define a largura da imagem */
+    height: auto; /* Mantém a proporção original da imagem */
+    border-radius: 50%;
+}
+
+/* ESPECIALIDADES */
+section.especialidades{
+    padding: 40px 4%;
+}
+
+section.especialidades .flex{
+    gap: 60px;
+}
+
+section.especialidades-box{
+    color: #3178c6;
+    padding: 40px;
+    border: 2px solid #3178c6;
+    margin-top: 45px;
+}
+
+.especialidades .especialidades-box{
+    color:#343a40;
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid #3178c6;
+    margin-top: 45px;
+}
+
+.especialidades .especialidades-box i{
+    font-size: 70px;
+    color: #3178c6;
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #3179c63a;
+}
+
+/*Estilo do sobre */
+section.sobre{
+    padding: 80px 4%;
+}
+
+.img-sobre img{
+    border-radius: 100px;
+    max-width: 100%; /* Limita a largura da imagem ao tamanho do contêiner */
+    height: 700px; /* Mantém a proporção da imagem */
+    width: 2700px; /* Ou o valor que você deseja */
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #3178c6;
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.sobre .txt-sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    background-color: #3178c6;
+    font-size: 25px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* PORTFOLIO */
+section.portfolio{
+    padding: 80px 4%;
+}
+
+section.portfolio .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-color: #3178c6;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port .hover{
+    background-position: 100% 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3178c6;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: #121212;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+.expandable-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  .expandable-content.show {
+    max-height: 500px;
+  }
+  
+  .expand-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .expand-btn:hover {
+    background-color: #0056b3;
+  }
+
+  /* teste */
+  .typewriter {
+    width: 100px;
+    position: relative; 
+    left: 0; 
+    transition: width 0.5s ease, left 0.5s ease;
+}
+
+.typewriter:hover {
+    width: 400px;
+    left: -200px;
+}
+
+.typewriter p {
+    font-size: 14px;
+    padding-right: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #3178c6;
+}
+
+/* tema */
+
+.toggle-theme {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 24px; /* Tamanho do ícone */
+}
+
